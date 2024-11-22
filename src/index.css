@@ -1,0 +1,218 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+  color: #333;
+}
+
+/* Kanban Board */
+.kanban-board {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.kanban-stage {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.kanban-stage h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+}
+
+.kanban-stage input {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.kanban-stage button {
+  border: none;
+  background-color: #5cb85c;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.kanban-stage button:hover {
+  background-color: #4cae4c;
+}
+
+.kanban-card {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.card-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-edit-title,
+.card-edit-description {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: none;
+}
+
+.card-edit-description {
+  height: 80px;
+}
+
+.card-edit-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn-save,
+.btn-cancel {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-save {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-cancel {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-save:hover {
+  background-color: #45a049;
+}
+
+.btn-cancel:hover {
+  background-color: #e53935;
+}
+
+.btn-delete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #f44336;
+  transition: color 0.3s ease;
+}
+
+.btn-delete:hover {
+  color: #d32f2f;
+}
+
+.card-view h4,
+.card-view p {
+  margin: 0;
+  word-wrap: break-word;
+}
+/* Add Stage Section */
+.add-stage {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.add-stage input {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px;
+  width: 200px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.add-stage button {
+  border: none;
+  background-color: #0275d8;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-stage button:hover {
+  background-color: #025aa5;
+}
+
+
+/* Style for the Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+ 
+}
+
+.modal-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kanban-header{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  font-size: 30px;
+}
